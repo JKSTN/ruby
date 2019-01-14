@@ -1,3 +1,4 @@
+
 reference: https://maker.pro/linux/tutorial/basic-linux-commands-for-beginners
 
 
@@ -9,10 +10,12 @@ You can open it to check that it works ofcourse, but not create file etc.
 3. Move the ruby folder into apps/
 4. Navigate to this folder (1_basic_linux_stuff) and create a file testing.rb
 5. Open this file in sublime (you may have to setup command line way of opening sublime before this)
-6. write code so that this file prints What's Up
+6. write code so that this file prints What's Up ( puts "What's Up" )
 7. Run the file and check output if it's correct
 8. in apps/ruby/1_basic_linux_stuff .. create a folder called testing1
 9. Similar to above, create another file testing1.rb which prints, 'I can do this'
 10. Go back to apps/ruby, and write a command that runs this file (while sitting in the apps/ruby folder)
 11. delete the file testing.rb
 12. delete the folder testing1
+
+

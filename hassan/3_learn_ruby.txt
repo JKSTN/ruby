@@ -1,0 +1,16 @@
+
+
+Use the following link to start learning ruby.
+https://www.codecademy.com/learn/learn-ruby
+
+
+make a folder in your repo folder called codeacademy, and whenever the course give something to practice .. 
+create those code files in that folder
+
+
+
+
+
+
+
+

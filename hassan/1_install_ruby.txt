@@ -1,0 +1,13 @@
+
+
+1. install rvm using: https://rvm.io/
+2. install ruby 2.4.4 using rvm install then use rvm list to confirm
+3. use rvm commands to make 2.4.4 your default ruby
+
+
+
+
+
+
+
+
