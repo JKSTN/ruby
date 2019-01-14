@@ -1,0 +1,14 @@
+
+
+https://product.hubspot.com/blog/git-and-github-tutorial-for-beginners
+
+Make changes to some ruby files in your folder and push on github. Do:
+
+0. git status   (do this atleast 10 times in an hour)
+1. git clone (already done)
+2. git add (to add a newly created file)
+3. git checkout (to rever any local changes done to the file)
+4. git commit -am""  (to commit all local changes)
+6. git pull origin master  (pull code from master)
+5. git push origin master   (push code to master)
+
