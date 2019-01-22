@@ -1,6 +1,6 @@
 class Acronym
   def self.abbreviate(string = "Portable Network Graphic")
-    string.scan(/(\A\w|(?<=\s)\w)/).flatten.join
+    string.scan(/(\A\w|(?<=\s)\w)|((?<=\-)\w)/).flatten.join.upcase
   end
 end
 
