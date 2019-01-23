@@ -5,9 +5,9 @@ class Acronym
 
   def self.abbreviate_h(string = "Portable Network Graphic")
     string.split(/\s+/)
-      .map{|s| s[0] }   #get first letters
-      .select{|s| /\A[A-Z]\z/ =~ s }    #only caps
+      .map{|s| s[0] }   #get first letters (as cap)
       .join
+      .upcase
   end
 end
 
