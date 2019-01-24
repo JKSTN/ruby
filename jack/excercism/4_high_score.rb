@@ -13,7 +13,5 @@ class HighScoreTable
 	end
 	def self.LastScore(score)
 		score[-1]
+	end
 end
-
-scores = [30, 50, 20, 70]
-puts HighScoreTable.HighScore(scores)
