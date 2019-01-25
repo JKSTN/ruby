@@ -1,25 +1,29 @@
 class HighScores
-	def scores(score)
-		return score
+	def initialize(scores)
+		@scores = scores
 	end
 
-	def self.personal_best(score)
-		array = score.sort!	{|a,b| b <=> a}
+	def scores
+		@scores
+	end
+
+	def personal_best
+		array = scores.sort!	{|a,b| b <=> a}
 		return array[0]
 	end
 
-	def self.personal_top(score)
-		array = score.sort!	{|a,b| b <=> a}
+	def personal_top
+		array = scores.sort!	{|a,b| b <=> a}
 		return array[0], array[1], array[2]
 	end
 
-	def self.range(score)
-		array = score.sort!	{|a,b| b <=> a}
+	def range
+		array = scores.sort!	{|a,b| b <=> a}
 		return array[0] - array[-1]
 	end
 
-	def self.latest(score)
-		score[-1]
+	def latest
+		scores[-1]
 	end
 
 end
