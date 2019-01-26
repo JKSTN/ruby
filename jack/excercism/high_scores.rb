@@ -26,6 +26,8 @@ class HighScores
   end
 
   def report
+    #you can use 'latest' here ..  since it's part of the same object, you can call those methods
+    #like this, "your latest score was #{latest}. That's #{personal_best - latest} short of..."
     return "Your latest score was #{scores[-1]}. That's #{scores.max - scores[-1]} short of your personal best!"
   end
 
