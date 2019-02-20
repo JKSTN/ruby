@@ -1,44 +1,25 @@
 class Phrase
 
-  attr_writer :sentence
+  CLEANER_PATTERN = /\b[\w']+\b/
+  # constant requires capital letters, and must be defined outside of the methods. You can't change the constant once defined. 
+
+  attr_reader :sentence
 
   def initialize(sentence)
     @sentence = sentence
   end
 
   def word_count
-
-    array = @sentence.split
-    clean1 = array.map { |element| element.gsub( /(\A[\W])/, "" ) }
-    clean2 = clean1.map { |element| element.gsub( /(\W)\z/, "" ) }
-
-    b = Hash.new(0)
-    
-    clean2.each do |v|
-    b[v] += 1
+    cleaned.each_with_object(Hash.new(0)) do |word, result|
+      result[word] += 1
     end
+  end
+
+  private
+
+  def cleaned
+    sentence.downcase.scan(CLEANER_PATTERN)
   end
 
 end
 
-phrase = Phrase.new("one of each")
-puts phrase.word_count
-
-
-
-
-
-# phrase.split.map { |element| element.gsub( / [ (\A\W) (\z\W) ] / , "" ) }
-
-# array[4].gsub( /[\A\W]/, "" )
-# # this works for dropping the commas from it
-
-# array[1].gsub( / (\A[\W]) /, "" )
-# # version 3
-
-# array[4].gsub( /(\W)\z/, "" )
-# # end of the string - note the position of z (no I am not joking)
-
-# array = phrase.split
-# clean1 = array.map { |element| element.gsub( /(\A[\W])/, "" ) }
-# clean2 = clean1.map { |element| element.gsub( /(\W)\z/, "" ) }
